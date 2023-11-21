@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Switch, Route, Link } from 'wouter';
+import Home from './pages/index.js';
+import Video from './pages/video.js';
+import Login from './pages/login.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+  return (<>
+   
+   <Switch>
+		<Route path="/" component={Home} />
+		<Route path="/video/:id" component={Video} />
+		<Route path="/login" component={Login} />
+		<Route>404, Page not been found</Route>
+   </Switch>
+   
+   
+  </>);
 }
 
-export default App;
+
