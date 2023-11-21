@@ -1,5 +1,6 @@
 import React from 'react';
 import { LeftSidebar }  from './Sidebar.js';
+import { Link }  from 'wouter';
 
 
 
@@ -75,7 +76,14 @@ return (<>
 					<div className="ddlqkddre3">
 						<div>	<span id="srcbqzbarq1"  className="matl111 faq25 material-symbols-outlined">search</span>	</div>
 						<div>	<span className="matl111 faq25 material-symbols-outlined">notifications</span>	</div>
-						<div>	<span className="matl111 faq25 material-symbols-outlined">account_circle</span>	</div>
+						<div>
+						
+						<Link href="/login"><span className="matl111 faq25 material-symbols-outlined">account_circle</span>	</Link>
+
+
+	
+	
+	</div>
 					</div>
 				
 		

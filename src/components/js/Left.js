@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link }  from 'wouter';
 
 
 export function Left(props) {
@@ -9,8 +10,8 @@ return (
 	
 	
 <div className="leftsidebar">
-
-		<div><a href=""><span className="material-symbols-outlined2">home</span> Home</a></div>
+	
+		<div><Link href="/"><span className="material-symbols-outlined2">home</span> Home</Link></div>
 		<div><a href=""><span className="material-symbols-outlined2">play_circle</span> Shorts</a></div>
 		<div><a href=""><span className="material-symbols-outlined2">tv_options_edit_channels</span> Subscriptions</a></div>
 </div>	
@@ -31,7 +32,7 @@ return (
 		<div><a href=""><span className="material-symbols-outlined2">kid_star</span> Favorite</a></div>
 
 		<div><a href=""><span className="material-symbols-outlined2">download</span>  Downloads</a></div>	
-		<div><a href=""><span className="material-symbols-outlined2">thumb_up</span>  Liked videos</a></div>	
+		<div><Link href="/liked"><span className="material-symbols-outlined2">thumb_up</span>  Liked videos</Link></div>	
 		
 </div>
 
