@@ -28,7 +28,7 @@ return (
 
 
 		<div><a href=""><span className="material-symbols-outlined2">video_library</span> Library</a></div>
-		<div><a href=""><span className="material-symbols-outlined2">update</span> History</a></div>
+		<div><Link href="/watched"><span className="material-symbols-outlined2">update</span> History</Link></div>
 		<div><a href=""><span className="material-symbols-outlined2">kid_star</span> Favorite</a></div>
 
 		<div><a href=""><span className="material-symbols-outlined2">download</span>  Downloads</a></div>	

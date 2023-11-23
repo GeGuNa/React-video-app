@@ -4,7 +4,7 @@ import Video from './pages/video.js';
 import Login from './pages/login.js';
 import Recovery from './pages/recovery.js';
 import Likedv from './pages/liked_videos.js';
-
+import Watched from './pages/watch.js';
 
 
 export default function App() {
@@ -16,6 +16,7 @@ export default function App() {
 		<Route path="/login" component={Login} />
 		<Route path="/recovery" component={Recovery} />
 		<Route path="/liked" component={Likedv} />
+		<Route path="/watched" component={Watched} />
 		<Route>404, Page not been found</Route>
    </Switch>
    
