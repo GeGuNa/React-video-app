@@ -5,6 +5,7 @@ import Login from './pages/login.js';
 import Recovery from './pages/recovery.js';
 import Likedv from './pages/liked_videos.js';
 import Watched from './pages/watch.js';
+import Page from './pages/page.js';
 
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
 		<Route path="/recovery" component={Recovery} />
 		<Route path="/liked" component={Likedv} />
 		<Route path="/watched" component={Watched} />
+		<Route path="/page/:uid" component={Page} />
 		<Route>404, Page not been found</Route>
    </Switch>
    
